@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct Assignment_9App: App {
+    
+    @StateObject var season = ManCityViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                TeamView()
+                    .environmentObject(season)
+            }
+            
         }
     }
 }
