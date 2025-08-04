@@ -20,7 +20,7 @@ class ManCityViewModel: ObservableObject {
         let baseUrl = "https://api.football-data.org/v4/teams/65/matches"
         
         // ENTER YOUR OWN API KEY
-        let apiKey = "4c23c414ba97432eb3cd61e16837c8f3"
+        let apiKey = ""
         
         guard var components = URLComponents(string : baseUrl) else { return }
         components.queryItems = [
